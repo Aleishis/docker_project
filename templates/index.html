@@ -8,12 +8,21 @@
 </head>
 <body>
     
+
+  <div>
+    <button>Agregar</button>
+  </div>
+
+  <div>
+
     <table class="table">
   <thead>
     <tr>
       <th scope="col">Nombre</th>
       <th scope="col">Especie</th>
       <th scope="col">Color</th>
+      <th scope="col">Eliminar</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -22,11 +31,12 @@
       <td>{{a.nombre}}</td>
       <td>{{a.especie}}</td>
       <td>{{a.color}}</td>
+      <td><button><i class="bi bi-trash"></i></button></td>
     </tr>
     {% endfor %}
   </tbody>
-</table>
-
+    </table>
+  </div>
 
 </body>
 </html>
